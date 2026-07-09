@@ -17,7 +17,7 @@
 
 **Koffe** é um aplicativo mobile que transforma a gestão de barbearias e clínicas de massoterapia em uma experiência simples, segura e poderosa — funciona 100% offline e sincroniza na nuvem quando conectado.
 
-[Fale comigo sobre parcerias](mailto:contato@koffe.app) · [Reportar bug](https://github.com/Felipeyrw/koffe/issues) · [Contribuir](#-quero-contribuir)
+[Fale comigo sobre parcerias](mailto:felipe.carolino.developer@gmail.com)
 
 </div>
 
@@ -33,7 +33,7 @@ A maioria dos sistemas de gestão para barbearias são **caros, complexos e depe
 
 | Pilar | O que isso significa |
 |-------|---------------------|
-| 🏔️ **Offline-First** | Dados salvos localmente primeiro. Funciona 100% sem internet. Sincroniza automaticamente. |
+| 🏔️ **Offline-First** | Dados salvos localmente primeiro. Funciona 100% sem internet. |
 | 🤖 **Agendamento por Voz** | Fale em português, a IA preenche o formulário. Agende em 10 segundos. |
 | 🔐 **Segurança de Verdade** | Banco criptografado (SQLCipher), autenticação biométrica, rastreamento de dispositivos. |
 
@@ -50,7 +50,6 @@ A maioria dos sistemas de gestão para barbearias são **caros, complexos e depe
 
 ### 👥 CRM de Clientes
 - Cadastro completo com telefone, WhatsApp, e-mail e observações
-- **Toque único para WhatsApp** — cliente fala com o barbeiro na hora
 - Histórico de atendimentos por cliente
 - Busca em tempo real e exclusão com **undo** (desfazer)
 
@@ -66,7 +65,7 @@ A maioria dos sistemas de gestão para barbearias são **caros, complexos e depe
 - Melhor e pior dia do período
 - **Ranking de serviços** por faturamento
 - Dedução de **impostos** configurável (ISS, PIS, COFINS)
-- Exportação em **PDF e Excel**
+- Exportação em **Excel**
 
 ### 🔔 Notificações Contextuais
 - 6 tipos de notificações configuráveis:
@@ -90,12 +89,12 @@ A maioria dos sistemas de gestão para barbearias são **caros, complexos e depe
 - **Rastreamento de dispositivos** — detecção de logins suspeitos
 - **Exclusão protegida** — operações sensíveis exigem biometria
 
-### 📡 Sincronização Inteligente
-- **14 sync managers** especializados
-- Retry automático com backoff exponencial
-- Verificação de conectividade antes de sincronizar
-- Mutex para evitar sincronizações concorrentes
-- Merge automático entre dispositivos
+### 🔄 Como a sincronização funciona
+- Toda alteração é salva localmente.
+- O item recebe status "pendente".
+- Quando há internet, um Sync Manager envia as alterações.
+- Em caso de falha, ocorre retry com backoff exponencial.
+- Conflitos são resolvidos por estratégia de merge.
 
 ---
 
@@ -142,10 +141,9 @@ Segurança       → local_auth + flutter_secure_storage + device_info_plus
 ### ✅ Implementado
 - [x] Agenda visual com 3 modos (Dia/Semana/Mês)
 - [x] Agendamento por voz com IA (Groq)
-- [x] CRM completo com WhatsApp integrado
 - [x] Controle financeiro (a pagar/receber, despesas fixas/variáveis)
 - [x] Dashboard com gráficos adaptativos
-- [x] Exportação PDF e Excel
+- [x] Exportação Excel
 - [x] Sistema de notificações contextuais
 - [x] Autenticação biométrica
 - [x] Sincronização offline-first (14 managers)
@@ -190,7 +188,7 @@ Se você é:
 - 🤳 **Influenciador** do nicho de barbearias
 - 🏗️ **Franquia** ou rede de barbearias
 
-**[Fale comigo](mailto:contato@koffe.app)** — estou aberto a parcerias que beneficiem ambas as partes.
+**[Fale comigo](mailto:felipe.carolino.developer@gmail.com)** — estou aberto a parcerias que beneficiem ambas as partes.
 
 ### Quer ser investidor?
 
@@ -199,7 +197,7 @@ Koffe está em fase inicial e busca:
 - Mentoria de negócio
 - Conexões no mercado de barbearias
 
-**[Entre em contato](mailto:contato@koffe.app)**
+**[Entre em contato](mailto:felipe.carolino.developer@gmail.com)**
 
 ---
 
@@ -221,9 +219,8 @@ Koffe está em fase inicial e busca:
 
 | Canal | Link |
 |-------|------|
-| 📧 Email | [contato@koffe.app](mailto:contato@koffe.app) |
+| 📧 Email | [contato@koffe.app](mailto:felipe.carolino.developer@gmail.com) |
 | 🐙 GitHub | [Felipeyrw/koffe](https://github.com/Felipeyrw/koffe) |
-| 🐛 Issues | [GitHub Issues](https://github.com/Felipeyrw/koffe/issues) |
 
 ---
 
@@ -233,7 +230,7 @@ Koffe é um software **privado e proprietário**. Todos os direitos reservados.
 
 O uso, reprodução ou distribuição não autorizada é estritamente proibido.
 
-Para informações de licenciamento, entre em contato: [contato@koffe.app](mailto:contato@koffe.app)
+Para informações de licenciamento, entre em contato: [felipe.carolino.developer@gmail.com](mailto:felipe.carolino.developer@gmail.com)
 
 ---
 
