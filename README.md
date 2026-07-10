@@ -130,7 +130,26 @@ Segurança       → local_auth + flutter_secure_storage + device_info_plus
 
 <div align="center">
 
-> *Em breve — previews do app em funcionamento*
+### 🏠 Menu Principal
+<img src="menu.jpeg" width="250"/>
+
+### 📊 Dashboard
+<img src="dashboard.jpeg" width="250"/>
+
+### 🗓️ Agenda
+<img src="agenda.jpeg" width="250"/>
+
+### ➕ Novo Agendamento
+<img src="novoAgendamento.jpeg" width="250"/>
+
+### 💰 Controle Financeiro
+<img src="financeiro.jpeg" width="250"/>
+
+### 👤 Meu Perfil
+<img src="meuPerfil.jpeg" width="250"/>
+
+### ⚙️ Configurações
+<img src="configuracoes.jpeg" width="250"/>
 
 </div>
 
